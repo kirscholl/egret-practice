@@ -204,8 +204,12 @@ class Main extends egret.DisplayObjectContainer {
     // this.addChild(eventTestContainer);
 
     // 自定义绘图
-    let graphicsTest = new GraphicsTest();
-    this.addChild(graphicsTest);
+    // let graphicsTest = new GraphicsTest();
+    // this.addChild(graphicsTest);
+
+    // 斜切
+    let renderTest = new RenderTest();
+    this.addChild(renderTest);
 
     // 自定义文本
     // let textTest = new TextTest();
@@ -226,5 +230,21 @@ class Main extends egret.DisplayObjectContainer {
     // 音频文件加载
     // let soundTest = new SoundTest();
     // this.addChild(soundTest);
+
+    // Debug模式测试，显示egret fps面板
+    // let utilTest = new UtilTest();
+    // this.addChild(utilTest);
+
+    // 帧事件测试
+    // let frameTest = new FrameTest();
+    // this.addChild(frameTest);
+
+    // tick心跳
+    // let tickTest = new TickerTest();
+    // this.addChild(tickTest)
+
+    // 时间测试，星星移动
+    // let moveStar = new MoveStar();
+    // this.addChild(moveStar);
   }
 }

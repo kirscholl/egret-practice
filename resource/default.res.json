@@ -1,7 +1,7 @@
 {
 	"groups":[
 		{
-			"keys":"tree_png,bg_jpg,egret_icon_png,description_json",
+			"keys":"tree_png,bg_jpg,egret_icon_png,description_json,star_png",
 			"name":"preload"
 		},
 		{
@@ -14,6 +14,11 @@
 			"name": "archer_mp3",
 			"type": "sound",
 			"url": "assets/archer.mp3"
+		},
+		{
+			"name":"star_png",
+			"type":"image",
+			"url":"assets/star.png"
 		},
 		{
 			"name":"tree_png",

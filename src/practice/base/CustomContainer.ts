@@ -36,7 +36,7 @@ class CustomContainer extends egret.Sprite {
 
     this.spr1.addChild(this.spr2);
     this.spr2.addChild(rec);
-    //
+    // 在删除子显示对象或子显示对象容器前要判断其父节点是否存在
     // if (rec.parent) {
     //   rec.parent.removeChild(rec);
     // }
@@ -92,7 +92,7 @@ class CustomContainer extends egret.Sprite {
     console.log("this.numChildren: " + this.numChildren);
 
     // 交换两个显示对象的深度值
-    this.exchangeChildDeep();
+    this.swapChildDeep();
 
     // 重新设置Child的深度值
     this.changeChildDeep(spr, 10);
@@ -101,7 +101,7 @@ class CustomContainer extends egret.Sprite {
     this.getSpecificChild();
   }
 
-  private exchangeChildDeep() {
+  private swapChildDeep() {
     this.swapChildren(this.getChildAt(2), this.getChildAt(4));
     this.swapChildrenAt(2, 4);
   }
